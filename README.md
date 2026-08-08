@@ -1,18 +1,10 @@
-# VCS Regression-Log Triage Agent
+# RTL Simulation Log Triage Agent
 
-An **AI agent pipeline** that automatically triages chip-simulation (Synopsys VCS)
-regression failures: it retrieves relevant reference knowledge for each failure,
-classifies *what broke*, proposes *how to fix it*, and **grades its own accuracy**
-against a known-answer key — all running on a **local model** so confidential
-logs never leave the machine.
+An **AI agent pipeline** that automatically triages chip-simulation regression failures: it retrieves relevant reference knowledge for each failure, classifies *what broke*, proposes *how to fix it*, and **grades its own accuracy** against a known-answer key — all running on a **local model** so confidential logs never leave the machine.
 
-> **Why:** when a verification engineer has dozens of failing tests overnight,
-> they spend hours just *categorizing* what broke before any real fixing starts.
-> This automates that first pass to cut turnaround time.
+> **Why:** when a verification engineer has dozens of failing tests overnight, they spend hours just *categorizing* what broke before any real fixing starts. This automates that first pass to cut turnaround time.
 
-Built by a Synopsys VCS verification engineer to apply 15 years of EDA domain
-expertise to agentic AI. The logs are synthetic (no proprietary data), but the
-failure signatures and the engineering are real.
+Built by an EDA verification engineer to apply 15+ years of domain expertise to agentic AI. The logs are synthetic (no proprietary data), but the failure signatures and the engineering are real.
 
 ---
 
@@ -32,7 +24,7 @@ failure signatures and the engineering are real.
 ```
             ┌─────────────────────── app.py (Streamlit UI) ───────────────────────┐
             │                                                                       │
- a VCS log ─┼─▶ RAG retrieve ─▶ Agent 1: TRIAGE ─▶ finding ─▶ Agent 2: PROPOSE FIX ─┼─▶ fix
+ a sim log ─┼─▶ RAG retrieve ─▶ Agent 1: TRIAGE ─▶ finding ─▶ Agent 2: PROPOSE FIX ─┼─▶ fix
             │   (kb/ notes)      (what broke?)     (contract)   (how to fix?)        │
             └───────────────────────────────────────────────────────────────────────┘
 
@@ -48,7 +40,7 @@ spend the model only on judgment.
 
 | File | Role |
 |---|---|
-| `gen_logs.py` | generates 6 synthetic VCS logs (compile, scoreboard, SVA, timeout, X-prop, pass) |
+| `gen_logs.py` | generates 6 synthetic simulation logs (compile, scoreboard, SVA, timeout, X-prop, pass) |
 | `triage_lib.py` | the triage agent as a pipeline component: schema contract + validation |
 | `triage_agent_ollama.py` | the tool-use agent loop (reason→act→observe) version |
 | `rag.py` | retrieval + RAG-grounded triage |
