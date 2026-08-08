@@ -3,3 +3,4 @@ lint-triage-agent/
 adapters/
 __pycache__/
 *.pyc
+.venv/
