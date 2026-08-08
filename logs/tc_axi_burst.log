@@ -1,0 +1,15 @@
+Chronologic VCS simulator copyright 1991-2024
+Parsing design file 'rtl/axi_master.sv'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "rtl/axi_master.sv", 214: token is ';'
+      assign awvalid = (state == ADDR_PHASE) ? 1'b1 : 1'b0
+                                                          ^
+  Expected ';' before 'endmodule'
+
+Error-[SE] Syntax error
+  "rtl/axi_master.sv", 217: token is 'endmodule'
+
+1 error
+make: *** [compile] Error 1

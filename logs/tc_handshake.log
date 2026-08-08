@@ -1,0 +1,10 @@
+Chronologic VCS simulator copyright 1991-2024
+Compiler version V-2024.03; Runtime version V-2024.03;  May 29 02:31 2026
+
+UVM_INFO @ 0: reporter [RNTST] Running test req_ack_handshake_test...
+UVM_INFO testbench/seq/handshake_seq.sv(40) @ 50: uvm_test_top.env.agt.seqr [SEQ] Driving req=1, waiting for ack
+UVM_WARNING testbench/seq/handshake_seq.sv(48) @ 100050: uvm_test_top.env.agt.seqr [STALL] No ack after 100000 ns, still waiting
+UVM_FATAL @ 5000000: reporter [TIMEOUT] Global timeout reached (set_global_timeout=5ms). Test did not complete. Likely deadlock: req asserted, ack never returned.
+$finish at simulation time         5000000
+** Report counts by severity
+UVM_FATAL :   1

@@ -1,0 +1,6 @@
+netlist_parser.cpp:301:121: warning: line exceeds 120 characters [whitespace/line_length]
+    auto result = netlist_db.find_module(module_name)->get_port_list()->filter_by_direction(PORT_INPUT)->to_vector();
+                                                                                                                        ^
+netlist_parser.cpp:418:1: warning: consider breaking this function into smaller units, function exceeds 80 lines [function/length]
+    void NetlistParser::elaborate_hierarchy() {
+    ^

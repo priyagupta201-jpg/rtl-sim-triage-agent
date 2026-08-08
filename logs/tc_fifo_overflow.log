@@ -1,0 +1,13 @@
+Chronologic VCS simulator copyright 1991-2024
+Compiler version V-2024.03; Runtime version V-2024.03;  May 29 02:18 2026
+
+UVM_INFO @ 0: reporter [RNTST] Running test fifo_stress_test...
+"Assertion no_overflow_when_full" failed at time 1450
+    File: rtl/sync_fifo.sv  Line: 88
+    rd_en && wr_en asserted while fifo_full==1, depth=16
+"Error: assert failed in scope top.dut.u_fifo at time 1450"
+UVM_ERROR @ 1450: uvm_test_top [SVA] Assertion failure propagated to scoreboard
+$finish at simulation time             1450
+** Report counts by severity
+UVM_ERROR :   1
+UVM_FATAL :   0

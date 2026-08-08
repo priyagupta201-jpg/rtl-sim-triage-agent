@@ -1,0 +1,18 @@
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version V-2024.03; Runtime version V-2024.03;  May 29 02:14 2026
+
+UVM_INFO @ 0: reporter [RNTST] Running test alu_smoke_test...
+UVM_INFO testbench/env/alu_scoreboard.sv(142) @ 100: uvm_test_top.env.sb [SB] Comparing txn id=0
+UVM_INFO testbench/env/alu_scoreboard.sv(142) @ 220: uvm_test_top.env.sb [SB] Comparing txn id=1
+UVM_ERROR testbench/env/alu_scoreboard.sv(151) @ 340: uvm_test_top.env.sb [MISMATCH] ADD result mismatch: exp=0x0000_00ff got=0x0000_00fe operands a=0x80 b=0x7f
+UVM_FATAL testbench/env/alu_scoreboard.sv(160) @ 340: uvm_test_top.env.sb [TOO_MANY_ERR] Stopping: error count reached max_quit_count=1
+
+--- UVM Report Summary ---
+** Report counts by severity
+UVM_INFO :   58
+UVM_WARNING : 0
+UVM_ERROR :   1
+UVM_FATAL :   1
+$finish called from file "uvm_root.svh", line 512.
+$finish at simulation time              340

@@ -1,0 +1,12 @@
+Chronologic VCS simulator copyright 1991-2024
+Compiler version V-2024.03; Runtime version V-2024.03;  May 29 02:40 2026
+
+UVM_INFO @ 0: reporter [RNTST] Running test reset_release_test...
+Warning-[STASKW_CO] $display/$write encountered 'x'
+RTL_X_CHECK rtl/ctrl_fsm.sv(73) @ 15: signal 'next_state' is X after reset deasserted at time 12
+UVM_ERROR testbench/env/ctrl_monitor.sv(95) @ 20: uvm_test_top.env.mon [X_PROP] state register propagated X to output 'grant', sampled grant=x
+UVM_ERROR testbench/env/ctrl_monitor.sv(95) @ 60: uvm_test_top.env.mon [X_PROP] grant still X, downstream comparison invalid
+$finish at simulation time              200
+** Report counts by severity
+UVM_ERROR :   2
+UVM_FATAL :   0

@@ -1,0 +1,6 @@
+sim_scheduler.cpp:42:12: warning: variable 'timeout_cycles' is used uninitialized [-Wuninitialized]
+    if (timeout_cycles > MAX_CYCLES) return false;
+            ^~~~~~~~~~~~~~
+sim_scheduler.cpp:38:9: note: 'timeout_cycles' declared here
+    int timeout_cycles;
+        ^~~~~~~~~~~~~~

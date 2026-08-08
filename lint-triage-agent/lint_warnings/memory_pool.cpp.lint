@@ -1,0 +1,6 @@
+memory_pool.cpp:17:8: warning: variable 'MemPool_Size' does not follow naming convention (use snake_case) [readability-identifier-naming]
+    int MemPool_Size = 4096;
+        ^~~~~~~~~~~~
+memory_pool.cpp:55:6: warning: function 'AllocateBlock' does not follow naming convention (use snake_case) [readability-identifier-naming]
+    int AllocateBlock(size_t sz) {
+        ^~~~~~~~~~~~~

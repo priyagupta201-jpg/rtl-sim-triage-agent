@@ -1,0 +1,9 @@
+{
+  "_comment": "Golden answer key — the verification 'expected results' for the triage agent. Hand-labeled ground truth for every log in logs/. The eval harness scores the agent's output against this. When you add a log, add its truth here too.",
+  "tc_alu_smoke.log":     { "category": "SCOREBOARD",    "should_flag": true },
+  "tc_axi_burst.log":     { "category": "COMPILE",       "should_flag": true },
+  "tc_decoder_basic.log": { "category": "PASS",          "should_flag": false },
+  "tc_fifo_overflow.log": { "category": "ASSERTION",     "should_flag": true },
+  "tc_handshake.log":     { "category": "TIMEOUT",       "should_flag": true },
+  "tc_reset_release.log": { "category": "X_PROPAGATION", "should_flag": true }
+}

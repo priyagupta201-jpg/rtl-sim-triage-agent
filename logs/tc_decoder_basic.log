@@ -1,0 +1,12 @@
+Chronologic VCS simulator copyright 1991-2024
+Compiler version V-2024.03; Runtime version V-2024.03;  May 29 02:44 2026
+
+UVM_INFO @ 0: reporter [RNTST] Running test decoder_basic_test...
+UVM_INFO testbench/env/dec_scoreboard.sv(120) @ 900: uvm_test_top.env.sb [SB] All 64 transactions matched
+UVM_INFO @ 905: reporter [TEST_DONE] *** TEST PASSED ***
+** Report counts by severity
+UVM_INFO :   71
+UVM_WARNING : 0
+UVM_ERROR :   0
+UVM_FATAL :   0
+$finish at simulation time              905
