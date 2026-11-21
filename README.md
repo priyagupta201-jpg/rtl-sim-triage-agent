@@ -49,6 +49,31 @@ spend the model only on judgment.
 | `eval_triage.py` + `golden.json` | automated eval harness + hand-labeled answer key |
 | `app.py` | Streamlit web app tying it together |
 
+## Sample Input / Output
+
+**Input** — a simulation log with a scoreboard mismatch (`logs/tc_alu_smoke.log`):
+```
+UVM_ERROR testbench/env/alu_scoreboard.sv(151) @ 340:
+  uvm_test_top.env.sb [MISMATCH] ADD result mismatch:
+  exp=0x0000_00ff got=0x0000_00fe  operands a=0x80 b=0x7f
+UVM_FATAL @ 340: [TOO_MANY_ERR] Stopping: error count reached max_quit_count=1
+```
+
+**Output** — structured JSON from the triage agent:
+```json
+{
+  "filename":     "testbench/env/alu_scoreboard.sv",
+  "category":     "SCOREBOARD",
+  "root_cause":   "RTL computes the wrong result for the ADD operation.",
+  "evidence_line": "UVM_ERROR testbench/env/alu_scoreboard.sv(151) @ 340: uvm_test_top.env.sb [MISMATCH] ADD result mismatch: exp=0x0000_00ff got=0x0000_00fe operands a=0x80 b=0x7f",
+  "confidence":   "high"
+}
+```
+
+The agent retrieves a matching reference note from the knowledge base (`kb/`) via RAG, then classifies and proposes a fix in one pass.
+
+---
+
 ## Run it
 
 **Prereqs:** [Ollama](https://ollama.com) running locally with a model pulled.
