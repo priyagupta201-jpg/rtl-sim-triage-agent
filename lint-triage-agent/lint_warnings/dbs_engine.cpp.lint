@@ -1,4 +1,0 @@
-dbs_engine.cpp:114:18: warning: implicit declaration of function 'compute_wakeup_mask' [-Wimplicit-function-declaration]
-    int mask = compute_wakeup_mask(proc_id, sensitivity_list);
-               ^~~~~~~~~~~~~~~~~~~~
-dbs_engine.cpp:114:18: note: did you mean 'compute_wakeup_map'?

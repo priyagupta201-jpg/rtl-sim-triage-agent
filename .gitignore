@@ -13,3 +13,12 @@ practice_logs.py
 make_ft_data.py
 eval_ft.py
 ft_data/
+
+# internal tooling
+.claude/
+
+# fine-tuning artifacts
+adapters/
+
+# nested repos
+lint-triage-agent/

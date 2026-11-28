@@ -1,6 +1,0 @@
-vsp_pass.cpp:203:9: warning: unused variable 'alias_count' [-Wunused-variable]
-    int alias_count = 0;
-        ^~~~~~~~~~~
-vsp_pass.cpp:231:9: warning: unused variable 'debug_mode' [-Wunused-variable]
-    bool debug_mode = false;
-         ^~~~~~~~~~
