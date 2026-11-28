@@ -3,4 +3,13 @@ lint-triage-agent/
 adapters/
 __pycache__/
 *.pyc
-.venv/
+
+# personal prep notes
+interview_prep.md
+python_cheatsheet.md
+agentic_eda_interview.md
+practice.py
+practice_logs.py
+make_ft_data.py
+eval_ft.py
+ft_data/
